@@ -8,6 +8,15 @@ export default defineConfig({
       // --- Configuración General del Sitio ---
       title: 'Manuales RDS CUBE',
 
+	  // --- AÑADE ESTA SECCIÓN ---
+      locales: {
+        root: {
+          label: 'Español',
+          lang: 'es-ES',
+        },
+      },
+      // --- FIN DE LA SECCIÓN ---
+
       // --- Personalización de Estilos ---
 
       // En `customCss` SÓLO deben ir rutas a archivos locales.
