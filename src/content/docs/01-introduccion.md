@@ -2,7 +2,7 @@
 title: Manuales RDS CUBE
 description: Una visión general del sistema y los primeros pasos para empezar a trabajar.
 ---
-
+![alt text](image.png)
 # ¡Bienvenido a RDS CUBE!
 
 Esta guía de documentación está diseñada para ayudarte a dominar todas las funcionalidades de nuestro ERP, desde las tareas más básicas hasta las operaciones más complejas.
