@@ -1,5 +1,5 @@
 ---
-title: INGRESO DE MERCADERÍA
+title: CARGA DE COMPROBANTES
 description: El proceso de ingreso de mercadería en el sistema consta de 3 pasos
 ---
 
