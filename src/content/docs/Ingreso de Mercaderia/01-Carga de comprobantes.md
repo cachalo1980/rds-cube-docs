@@ -5,6 +5,12 @@ description: El proceso de ingreso de mercadería en el sistema consta de 3 paso
 
 
 
-1. 	Carga de comprobante: Mediante este proceso se ingresa la información del remito del cliente en el sistema. La mercadería aún no está en el stock. 
-2. 	Preparación de entradas: Mediante este proceso se generan las ordenes de procesamiento o de trabajo para el guardado de esta mercadería entrante.
-3. 	Confirmación de entradas por lay-out: A través de este proceso se confirma la ubicación de la mercadería.
+Carga de comprobante: Mediante este proceso se ingresa la información del remito del cliente en el sistema. La mercadería aún no está en el stock.
+
+1. Ingresar en el módulo WAREHOUSE, carpeta MOVIMIENTOS y seleccionar CARGA DE COMPROBANTES.
+
+![alt text](image-8.png)
+
+2. Para ingresar un nuevo registro Clickear el ícono ![alt text](image-10.png) 
+
+![alt text](image-9.png)
