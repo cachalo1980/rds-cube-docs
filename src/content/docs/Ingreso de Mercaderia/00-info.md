@@ -1,5 +1,5 @@
 ---
-title: Información
+title: INFORMACIÓN
 description: El proceso de ingreso de mercadería en el sistema consta de 3 pasos
 ---
 
