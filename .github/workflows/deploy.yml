@@ -1,0 +1,51 @@
+# Nombre del flujo de trabajo que aparecerá en la pestaña "Actions" de GitHub
+name: Deploy to VPS
+
+# Disparador: Este workflow se ejecuta CADA VEZ que haces un push a la rama 'main'
+on:
+  push:
+    branches:
+      - main
+
+# Trabajos a realizar
+jobs:
+  build-and-deploy:
+    # Usamos una máquina virtual de Ubuntu para ejecutar los pasos
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descarga el código del repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Inicia sesión en Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 3. Construye y sube la imagen de Docker
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          # Etiqueta la imagen con 'latest' y con un identificador único del commit
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/rds-cube-docs:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/rds-cube-docs:${{ github.sha }}
+
+      # 4. Despliega en el VPS
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_SSH_HOST }}
+          username: ${{ secrets.VPS_SSH_USERNAME }}
+          key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          script: |
+            # Usamos '|| true' para que el script no falle si el contenedor no existe la primera vez
+            docker stop rds-docs || true
+            docker rm rds-docs || true
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/rds-cube-docs:latest
+            docker run -d --restart unless-stopped -p 8080:80 --name rds-docs ${{ secrets.DOCKERHUB_USERNAME }}/rds-cube-docs:latest
