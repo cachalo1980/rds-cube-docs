@@ -1,5 +1,5 @@
 ---
-title: Introducción a RDS CUBE
+title: Introducción a Manuales RDS CUBE
 description: Una visión general del sistema y los primeros pasos para empezar a trabajar.
 ---
 
