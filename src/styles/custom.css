@@ -1,0 +1,61 @@
+/* src/styles/custom.css - Tema Claro Estilo Frioneto */
+
+:root {
+  /* --- FUENTE --- */
+  /* Aseguramos que Montserrat se use en todas partes */
+  --sl-font-body: 'Montserrat', sans-serif;
+  --sl-font-headings: 'Montserrat', sans-serif;
+
+  /* --- COLORES DE ACENTO (AZULES DE FRIONETO) --- */
+  /* El azul principal para botones y enlaces activos */
+  --sl-color-accent: #1E6BFF; 
+  /* Un azul más claro para estados hover o elementos secundarios */
+  --sl-color-accent-high: #48A7FF;
+  /* Un azul muy claro para fondos sutiles (ej. hover en la barra lateral) */
+  --sl-color-accent-low: rgba(30, 107, 255, 0.1);
+
+  /* --- COLORES DE FONDO (TEMA CLARO) --- */
+  /* El fondo principal ahora es blanco */
+  --sl-color-bg: #ffffff; 
+  /* Fondo para la barra lateral y otros elementos, un gris muy sutil para diferenciar */
+  --sl-color-bg-sidebar: #f7f7f9; 
+  /* Fondo para bloques de código */
+  --sl-color-bg-code: #f0f0f2;
+  
+  /* --- COLORES DE TEXTO (ALTO CONTRASTE) --- */
+  /* Texto principal y cabeceras, un gris muy oscuro en lugar de negro puro */
+  --sl-color-text-major: #222222; 
+  /* Texto de párrafos, ligeramente más suave */
+  --sl-color-text-normal: #333333; 
+  /* Texto secundario, como descripciones o fechas */
+  --sl-color-text-minor: #555555;
+  /* Texto de los enlaces, que usa el color de acento principal */
+  --sl-color-text-accent: var(--sl-color-accent);
+
+  /* --- COLORES DE BORDES --- */
+  /* Bordes muy sutiles para separar secciones */
+  --sl-color-border: #e5e5e7;
+}
+
+/* --- AJUSTES FINOS ADICIONALES --- */
+
+/* La cabecera (header) tendrá un borde inferior para separarla del contenido */
+header {
+  border-bottom: 1px solid var(--sl-color-border);
+}
+
+/* El elemento activo en la barra lateral tendrá un fondo azul y texto blanco */
+.sidebar-content a[aria-current="page"] {
+  background-color: var(--sl-color-accent);
+  color: white;
+}
+/* Al pasar el ratón por encima del elemento activo, mantenemos el estilo */
+.sidebar-content a[aria-current="page"]:hover {
+  background-color: var(--sl-color-accent);
+  color: white;
+}
+
+/* Hacemos que los títulos sean un poco más gruesos (bold) */
+h1, h2, h3 {
+  font-weight: 700;
+}
