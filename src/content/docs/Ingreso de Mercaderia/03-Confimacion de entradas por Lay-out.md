@@ -2,7 +2,7 @@
 title: CONFIRAMCION DE ENTRADAS POR LAY-OUT
 description: A reference page in my new Starlight docs site.
 ---
-### Paso 1: Acceder a Congirmacion de Entrada por Layout
+### Paso 1: Acceder a Confirmacion de Entrada por Layout
 ---
 
 Ingresar en el módulo WAREHOUSE, carpeta MOVIMIENTOS/ ENTRADAS y seleccionar CONFIRMACION DE ENTRADA CON LAYOUT
