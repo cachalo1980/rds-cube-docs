@@ -1,60 +1,42 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
-      // Título principal del sitio web. Aparece en la cabecera.
-      title: 'Manuales RDS CUBE',
-
-      // Configuración de internacionalización (i18n).
-      // Al definir 'es-ES' como la raíz, Starlight usará sus
-      // traducciones al español para la interfaz.
+      title: 'FRIGORIFICO ONETO - Manuales RDS CUBE',
+      
+      // --- AÑADE ESTA LÍNEA PARA EL FAVICON ---
+      // Ruta al icono que aparecerá en la pestaña del navegador.
+      // La ruta parte desde la raíz del proyecto.
+      favicon: '/src/assets/favicon.svg',
+      
+      // --- AÑADE ESTA SECCIÓN PARA EL LOGO ---
+      // Configuración del logo que aparece en la cabecera.
+      logo: {
+        // Ruta al archivo del logo.
+        src: './src/assets/logo.svg',
+        // Texto alternativo para accesibilidad y si la imagen no carga.
+        alt: 'Logo RDS CUBE',
+        // Si el logo ya incluye el nombre, puedes ocultar el 'title' de texto.
+        replacesTitle: false,
+      },
+      
       locales: {
         root: {
           label: 'Español',
           lang: 'es-ES',
         },
       },
-
-      // Carga de archivos CSS personalizados para sobreescribir los estilos.
       customCss: [
         './src/styles/custom.css',
       ],
-
-      // Elementos para añadir a la etiqueta <head> de todas las páginas.
-      // Aquí importamos la fuente "Inter" que usaremos en nuestro CSS.
       head: [
-        {
-          tag: 'link',
-          attrs: {
-            rel: 'preconnect',
-            href: 'https://fonts.googleapis.com',
-          },
-        },
-        {
-          tag: 'link',
-          attrs: {
-            rel: 'preconnect',
-            href: 'https://fonts.gstatic.com',
-            crossorigin: true,
-          },
-        },
-        {
-          tag: 'link',
-          attrs: {
-            href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
-            rel: 'stylesheet',
-          },
-        },
+        // ... (el resto de tu configuración de 'head' para la fuente)
+        { tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
+        { tag: 'link', attrs: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true } },
+        { tag: 'link', attrs: { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap', rel: 'stylesheet' } },
       ],
-
-      // Opcional: Puedes añadir un logo aquí si lo tienes.
-      // logo: {
-      //   src: './src/assets/logo.svg',
-      // },
-
     }),
   ],
 });

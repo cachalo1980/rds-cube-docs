@@ -59,3 +59,31 @@ header {
 h1, h2, h3 {
   font-weight: 700;
 }
+/* --- AJUSTE DE TAMAÑO DEL LOGO EN LA CABECERA (Versión Corregida) --- */
+
+/* Apuntamos al enlace que contiene el logo y el título */
+.site-title a[data-has-logo] {
+  /* Le decimos que use flexbox para alinear el logo y el texto */
+  display: flex;
+  align-items: center; /* Centra verticalmente el logo y el texto */
+  gap: 0.5rem; /* Crea un espacio entre el logo y el texto */
+}
+
+/* Ahora, apuntamos específicamente a la imagen del logo */
+.site-title a[data-has-logo] img {
+  /* Aumentamos la altura. Este es el valor que debes ajustar. */
+  height: 3.5rem !important; /* Prueba con 40px, 2.5rem, etc. */
+
+  /* Anulamos cualquier ancho o alto máximo que pueda tener por defecto */
+  max-width: none !important;
+  max-height: none !important;
+  width: auto !important; /* Hacemos que el ancho se ajuste proporcionalmente */
+}
+/* --- AJUSTE DE TAMAÑO DEL LOGO EN LA CABECERA (Estilo Frioneto) --- */
+
+/* Apuntamos de forma más genérica pero potente a la imagen del logo dentro de la cabecera */
+header .logo {
+  height: 3rem !important; /* <--- AJUSTA ESTE VALOR (ej: 48px) */
+  width: auto !important;
+  max-height: none !important;
+}
