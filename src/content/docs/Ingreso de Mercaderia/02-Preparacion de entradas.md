@@ -3,9 +3,11 @@ title: PREPARACION DE ENTRADAS
 description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+### Paso 1: Ingresar al Modulo Correspondiente
 
+Ingresar en el módulo WAREHOUSE, carpeta MOVMIENTOS/ ENTRADAS y seleccionar PREPARACION DE ENTRADAS.
+
+![Ingreso al modulo Preparacion de entradas](image-18.png)
 ## Further reading
 
 - Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
