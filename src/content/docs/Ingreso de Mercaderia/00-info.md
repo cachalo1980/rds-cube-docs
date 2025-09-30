@@ -10,29 +10,3 @@ El proceso de ingreso de mercadería en el sistema consta de 3 pasos
 3. 	Confirmación de entradas por lay-out: A través de este proceso se confirma la ubicación de la mercadería.
 
 
-# Mis Apuntes en Markdown
-
-¡Hola! Este es un documento simple que muestra la sintaxis básica de **Markdown**.
-
----
-
-## Lista de Tareas
-
-Aquí está lo que necesito hacer:
-
-1. Escribir el informe.
-2. Responder correos.
-3. Preparar el café.
-
-> "La mejor manera de empezar es empezar." - Anónimo
-
-### Bloque de Código
-
-Si necesito mostrar algo de código, puedo usar un bloque cercado:
-
-```javascript
-function saludar() {
-    console.log("¡Hola, mundo!");
-}
-
-saludar();
