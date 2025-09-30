@@ -5,31 +5,27 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      // --- Configuración General del Sitio ---
+      // Título principal del sitio web. Aparece en la cabecera.
       title: 'Manuales RDS CUBE',
 
-	  // --- AÑADE ESTA SECCIÓN ---
+      // Configuración de internacionalización (i18n).
+      // Al definir 'es-ES' como la raíz, Starlight usará sus
+      // traducciones al español para la interfaz.
       locales: {
         root: {
           label: 'Español',
           lang: 'es-ES',
         },
       },
-      // --- FIN DE LA SECCIÓN ---
 
-      // --- Personalización de Estilos ---
-
-      // En `customCss` SÓLO deben ir rutas a archivos locales.
+      // Carga de archivos CSS personalizados para sobreescribir los estilos.
       customCss: [
         './src/styles/custom.css',
       ],
-      
-      // --- AÑADIR ELEMENTOS AL <HEAD> ---
-      
-      // Esta es la sección correcta para añadir etiquetas <link>, <script>, etc.
-      // que se aplicarán en todas las páginas del sitio.
+
+      // Elementos para añadir a la etiqueta <head> de todas las páginas.
+      // Aquí importamos la fuente "Inter" que usaremos en nuestro CSS.
       head: [
-        // 1. Pre-conexión con los servidores de Google Fonts (mejora el rendimiento).
         {
           tag: 'link',
           attrs: {
@@ -45,15 +41,20 @@ export default defineConfig({
             crossorigin: true,
           },
         },
-        // 2. La importación real de la hoja de estilos de la fuente Montserrat.
         {
           tag: 'link',
           attrs: {
-            href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap',
+            href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
             rel: 'stylesheet',
           },
         },
       ],
+
+      // Opcional: Puedes añadir un logo aquí si lo tienes.
+      // logo: {
+      //   src: './src/assets/logo.svg',
+      // },
+
     }),
   ],
 });

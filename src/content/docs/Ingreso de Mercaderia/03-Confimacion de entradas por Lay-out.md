@@ -2,9 +2,13 @@
 title: CONFIRAMCION DE ENTRADAS POR LAY-OUT
 description: A reference page in my new Starlight docs site.
 ---
+### Paso 1: Acceder a Congirmacion de Entrada por Layout
+---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+Ingresar en el módulo WAREHOUSE, carpeta MOVIMIENTOS/ ENTRADAS y seleccionar CONFIRMACION DE ENTRADA CON LAYOUT
+
+---
+![alt text](image-24.png)
 
 ## Further reading
 
