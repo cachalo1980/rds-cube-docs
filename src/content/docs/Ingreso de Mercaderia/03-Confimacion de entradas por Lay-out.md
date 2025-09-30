@@ -12,4 +12,4 @@ Ingresar en el módulo WAREHOUSE, carpeta MOVIMIENTOS/ ENTRADAS y seleccionar CO
 
 ## Further reading
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis
