@@ -51,5 +51,7 @@ UNIDAD**
 
 8. Se pueden agregar datos adicionales y luego clic en guardar
 
-    ![Ingreso de datos adicionales](image-2.png)
+    ![Para ingresar datos adicionales](image-17.png)
+
+
 
