@@ -3,8 +3,17 @@ title: COMPROBANTES DE DESPACHO
 description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+## Paso 1: Acceder a Comprobantes de despacho
+---
+![alt text](image.png)
+
+---
+## Paso 2: Crear el nuevo comprobante de despacho
+---
+
+---
+## Paso 3: Agregar los datos de los articulos a retirar
+
 
 ## Further reading
 
