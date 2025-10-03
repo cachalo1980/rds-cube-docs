@@ -50,9 +50,9 @@ description: A reference page in my new Starlight docs site.
 
 ---
 
-### Paso 4: Entrada de la mercaderia al stock del cliente
+### Paso 4: Salida de la mercaderia al stock del cliente
 --- 
-El siguiente paso sería asignarle un motivo de stock de ingreso. Luego de asignarle el motivo de stock lo único que nos queda es cliquear grabar y nuestra orden habrá cumplido el ciclo de confirmación de salida descontando la cantidad confirmada de stock.
+El siguiente paso sería asignarle un motivo de stock de salida. Luego de asignarle el motivo de stock lo único que nos queda es cliquear grabar y nuestra orden habrá cumplido el ciclo de confirmación de salida descontando la cantidad confirmada de stock.
 
 - Ingresar por tercera vez clickeando el ícono de busqueda.
 - Trae las órdenes que ya tienen ubicación asignada en estado Procesado.
